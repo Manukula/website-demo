@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latest News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: #f3f3f3;
+      color: #333;
+    }
+
+    .news-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .news-section h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .news-section h2::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background-color: orange;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .news-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    .news-content h3 {
+      font-size: 1.3rem;
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    .news-content p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+      /* headlight */
+
+  .headlight h1{
+    align-items: center;
+    position: center;
+    background: purple;
+    height: 30vh;
+    padding: 80px;
+    text-align: center;
+  
+  }
+
+  /* section babies */
+  .lids {
+  padding: 60px 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.babies {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.babies img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 4px solid orange;
+}
+
+.babies-content {
+  flex: 1;
+}
+
+.babies-content h3 {
+  font-size: 1.5rem;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.babies-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.babies-content2 {
+  flex: 1;
+}
+
+/* Reverse layout for second baby section */
+.babies:nth-child(2) {
+  flex-direction: row-reverse;
+}
+  </style>
+</head>
+
+<body>
+
+    <section class="headlight">
+        <h1>what we do</h1>
+    </section>
+
+  <section class="news-section">
+    <h2>Latest News</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <img src="Pic/IMG-20250303-WA0020.jpg" alt="News 1">
+        <div class="news-content">
+          <h3>rAge is coming to town!</h3>
+          <p>22 years on, and the Really Awesome gaming expo (rAge) continues to be the epicentre of gaming, tech, and digital entertainment in South Africa.</p>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="Pic/IMG-20250303-WA0019.jpg" alt="News 2">
+        <div class="news-content">
+          <h3>rAge goes harder than ever before</h3>
+          <p>The 2023 rAge at Gallagher Convention Centre rocked Midrand with over 33,000 attendees across three days of gaming madness.</p>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="Pic/IMG-20250303-WA0019.jpg" alt="News 3">
+        <div class="news-content">
+          <h3>Unlocking education in gaming</h3>
+          <p>The expo explores more than entertainment – it's a journey through innovation, education, and skill development through gaming.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lids">
+    <div class="babies">
+      <img src="Pic/background.jpg" alt="babies1">
+      <div class="babies-content">
+        <h3>Playing</h3>
+        <p>As they were playing and having fun, their laughter filled the air, creating moments of joy and connection.</p>
+      </div>
+    </div>
+
+    <div class="babies">
+      <img src="Pic/background.jpg" alt="babies1">
+      <div class="babies-content2">
+        <h3>Playing</h3>
+        <p>As they were playing and having fun, their laughter filled the air, creating moments of joy and connection.</p>
+      </div>
+    </div>
+
+    <div class="babies">
+      <img src="Pic/background.jpg" alt="babies1">
+      <div class="babies-content">
+        <h3>Playing</h3>
+        <p>As they were playing and having fun, their laughter filled the air, creating moments of joy and connection.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
